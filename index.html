@@ -6,10 +6,126 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hacienda Cania Brava</title>
+  <link rel="stylesheet" href="./src/styles/style.css">
+  <link rel="stylesheet" href="./src/styles/media-queries.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet">
+
 </head>
 
 <body>
 
+  <header>
+    <div class="header__filter-opacity">
+      <div class="header__title">
+        DESCUBRA LA MAJESTUOSIDAD DEL QUINDÍO <span>DE FORMA EXCLUSIVA</span>
+      </div>
+      <a class="header__button">MÁS INFORMACIÓN</a>
+      <div class="header__info-container">
+        <div class="header__info-tags">
+          <div class="info-tag">
+            <img src="./src/assets/icons/people.png" alt="icons/people">
+            <p>9 Personas</p>
+          </div>
+          <div class="info-tag">
+            <img src="./src/assets/icons/double-bed.png" alt="icons/double-bed">
+            <p>4 Habitaciones</p>
+          </div>
+          <div class="info-tag">
+            <img src="./src/assets/icons/shower.png" alt="icons/shower">
+            <p>5 Baños</p>
+          </div>
+          <div class="info-tag">
+            <img src="./src/assets/icons/swimming-pool.png" alt="icons/swimming-pool">
+            <p>Piscina</p>
+          </div>
+        </div>
+        <div class="header__info-place">
+          Quindío, Colombia
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+    <section class="main__detail-section">
+      <div class="main__detail-intro">
+        <h3>El Eje Cafetero se caracteriza por su encanto propio. Sus hermosos paisajes, sus cafetales, su clima, su
+          topografía y su
+          gente, seducen a los visitantes de todas partes del mundo.</h3>
+      </div>
+      <div class="main__detail-box">
+        <h2>Descripción</h2>
+        <p>Cañabrava es una finca familiar que dedica la mayor parte de sus esfuerzos al ecoturismo promoviéndola así
+          con nuestro
+          estilo y forma de vida. Uno de los principales e importantes elementos es la apreciación por el medio ambiente
+          que la
+          rodea tanto en lo natural como en lo cultural. Durante su estadía se podrán disfrutar de actividades como
+          caminatas por
+          lindos senderos protegidos entre los guaduales, paseos a caballo con guía , avistamiento de pajaros, juego de
+          badmington
+          y un espacio al que llamamos el “yogario” para relajarse y meditar.</p>
+      </div>
+      <div class="main__detail-box">
+        <h2>Actividades:</h2>
+        <p>Cañabrava es una finca familiar que dedica la mayor parte de sus esfuerzos al ecoturismo promoviéndola así
+          con nuestro
+          estilo y forma de vida. Uno de los principales e importantes elementos es la apreciación por el medio ambiente
+          que la
+          rodea tanto en lo natural como en lo cultural. Durante su estadía se podrán disfrutar de actividades como
+          caminatas por
+          lindos senderos protegidos entre los guaduales, paseos a caballo con guía , avistamiento de pajaros, juego de
+          badmington
+          y un espacio al que llamamos el “yogario” para relajarse y meditar.</p>
+      </div>
+    </section>
+
+    <section class="main__images-section">
+      <div class="main__slider">
+        <button class="slider__button" id="SliderPrevButton">
+          <img src="./src/assets/icons/left-arrow.png" alt="left-arrow">
+        </button>
+        <div class="slider__container">
+          <img class="slider__image" src="./src/assets/images/Caña-Brava-5.jpg" alt="currentImage">
+          <img class="slider__image" src="./src/assets/images/Caña-Brava-15.jpg" alt="postImage">
+          <img class="slider__image" src="./src/assets/images/Caña-Brava-31.jpg" alt="preImage">
+        </div>
+        <button class="slider__button" id="SliderNextButton">
+          <img src="./src/assets/icons/right-arrow.png" alt="right-arrow">
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer__filter-opacity">
+      <form class="footer__form" action="">
+        <h3>Más información</h3>
+        <fieldset class="form__field--4-columns">
+          <legend for="">Nombre y apellidos </legend>
+          <input class="footer__form--transparent" type="text">
+        </fieldset>
+        <fieldset class="form__field--1-columns">
+          <legend for="">Correo electrónico</legend>
+          <input class="footer__form--transparent" type="email">
+        </fieldset>
+        <fieldset class="form__field--2-columns">
+          <legend for="">Teléfono</legend>
+          <input class="footer__form--transparent" type="text">
+        </fieldset>
+        <fieldset class="form__field--4-columns">
+          <legend for="">Mensaje o preguntas</legend>
+          <input class="footer__form--transparent" type="text">
+        </fieldset>
+        <input class="footer__form--submitButton" type="submit" value="ENVIAR">
+      </form>
+    </div>
+
+  </footer>
 </body>
 
 </html>

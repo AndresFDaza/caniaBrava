@@ -1,0 +1,275 @@
+/*
+
+
+    Posicionamiento --> static, absolute, relative, fixed
+    Modelo de caja (Box model) --> margin, border, padding, content
+    Tipografía --> tipos, tamaños de fuente, etc
+    Estilos visuales --> box-shadow, border-radius, gradient, etc
+    Otros --> reglas CSS y más
+
+
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-dark-green : rgb(18, 22, 7);
+  --color-light-green : rgb(161, 164, 133);
+  --color-medium-green : rgb(115, 118, 91);
+  --color-submit-green : rgb(241, 243, 225);
+
+  --title-font-family : 'Lato', sans-serif; /* 300 and 700*/
+  --body-font-family : 'Open Sans', sans-serif; /* 400 and 600*/
+}
+
+body {
+  font-family: var(--body-font-family);
+  color: #333;
+  font-size: 62.5%;
+  line-height: 1.6em;
+  margin: 0;
+}
+
+/* Header styles */
+
+header {
+  width: 100%;
+  height: 85vh;
+  background-image: url(../assets/images/header-banner.jpg);
+}
+
+.header__filter-opacity {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.40);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__title{
+  text-align: center;
+  width: fit-content;
+  color: aliceblue;
+  font-size: 3.3rem;
+  padding: 0 20%;
+  line-height: 1.4em;
+  font-family: var(--title-font-family);
+  font-weight: 300;
+  margin-bottom: 1.2rem;
+}
+
+.header__title > span{
+  font-weight: bold;
+}
+
+.header__button{
+  text-align: center;
+  padding: .5em;
+  border-radius: 5px;
+  width: 20%;
+  font-weight: bold;
+  color: var(--color-dark-green);
+  background: var(--color-light-green);
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1.2rem;
+}
+
+.header__info-container{
+  font-size: 1rem;
+  display: flex;
+  background: aliceblue;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  justify-content: space-between;
+  padding: 2rem 5rem;
+  background: var(--color-dark-green);
+  color: white;
+  border-radius: 10px;
+  position: absolute;
+  top: 79%;
+  flex-wrap: wrap;
+}
+
+.header__info-tags{
+  display: flex;
+  align-items: center;
+}
+
+.info-tag{
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  border-right: 1px solid white;
+}
+
+.info-tag > img{
+  width: 40px;
+  height: 40px;
+  margin-right: .6rem;
+}
+
+.header__info-place{
+  padding-left: 1rem;
+}
+
+/* Main styles */
+
+main{
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+
+.main__detail-section{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 3fr;
+  align-items: start;
+  gap: 1rem 20% ;
+  padding: 8% 14%;
+}
+
+.main__detail-intro{
+  grid-column: 1 / 3;
+  padding: 0 22%;
+  text-align: center;
+}
+
+.main__detail-box{
+  padding: 1rem;
+  text-align: justify;
+}
+
+.main__detail-box > h2{
+  margin-bottom: 1.6rem;
+  color: var(--color-dark-green);
+  font-weight: bold;
+}
+
+.main__images-section{
+  padding: 0 10%;
+  margin-bottom: 5rem;
+}
+
+.main__slider{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.slider__button{
+  width: 40px;
+  height: 60px;
+  background-color: var(--color-dark-green);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.slider__button > img{
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+
+.slider__container{
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  height: 600px;
+}
+
+.slider__image{
+  width: 70%;
+}
+
+/*  Footer styles */
+
+footer{
+  height: max-content;
+  width: 100%;
+  background-image: url('../assets/images/Caña-Brava-footer.jpg');
+}
+
+fieldset{
+  border: none;
+}
+
+.footer__filter-opacity {
+  width: 100%;
+  height:  max-content;
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 5% 20%;
+}
+
+.footer__form{
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 0 40px;
+  height: fit-content;
+}
+
+.footer__form > h3{
+  font-size: 1.6rem;
+  font-family: var(--body-font-family);
+  font-weight: 400;
+  grid-column: 1 / 5;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.footer__form--transparent{
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid white;
+  color: white;
+  padding: .5rem;
+  height: 2rem;
+  width: 100%;
+}
+
+fieldset > legend{
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  font-family: var(--title-font-family);
+  font-weight: 300;
+}
+
+.footer__form--submitButton{
+  text-align: center;
+  padding: .5em;
+  border-radius: 5px;
+  width: 100%;
+  height: 36%;
+  font-weight: bold;
+  color: var(--color-medium-green);
+  background: var(--color-submit-green);
+  font-size: .9rem;
+  cursor: pointer;
+  margin-top: 1.2rem;
+  border: none;
+  font-family: var(--body-font-family);
+  grid-column: 4 / 5;
+  align-items: flex-start;
+}
+
+.form__field--1-columns{
+  grid-column: 1 / 3;
+}
+
+.form__field--2-columns{
+  grid-column: 3 / 5;
+}
+
+.form__field--4-columns{
+  grid-column: 1 / 5;
+}
