@@ -1,0 +1,112 @@
+/*
+
+
+    Posicionamiento --> static, absolute, relative, fixed
+    Modelo de caja (Box model) --> margin, border, padding, content
+    Tipografía --> tipos, tamaños de fuente, etc
+    Estilos visuales --> box-shadow, border-radius, gradient, etc
+    Otros --> reglas CSS y más
+
+
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-dark-green : rgb(18, 22, 7);
+  --color-light-green : rgb(161, 164, 133);
+  --color-medium-green : rgb(115, 118, 91);
+
+  --title-font-family : 'Lato', sans-serif; /* 300 and 700*/
+  --body-font-family : 'Open Sans', sans-serif; /* 400 and 600*/
+}
+
+body {
+  font-family: var(--body-font-family);
+  color: #333;
+  font-size: 62.5%;
+  line-height: 1.6em;
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  height: 85vh;
+  background-image: url(../assets/images/header-banner.jpg);
+}
+
+.header__filter-opacity {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.40);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__title{
+  text-align: center;
+  width: fit-content;
+  color: aliceblue;
+  font-size: 3.3rem;
+  padding: 0 20%;
+  line-height: 1.4em;
+  font-family: var(--title-font-family);
+  font-weight: 300;
+  margin-bottom: 1.2rem;
+}
+
+.header__title > span{
+  font-weight: bold;
+}
+
+.header__button{
+  text-align: center;
+  color: var(--color-medium-green);
+  padding: .5em;
+  border-radius: 5px;
+  width: 20%;
+  font-weight: bold;
+  color: var(--color-dark-green);
+  background: var(--color-light-green);
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1.2rem;
+}
+
+.header__info-container{
+  font-size: .8rem;
+  display: flex;
+  background: aliceblue;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  justify-content: space-between;
+  padding: 2rem 5rem;
+  position: sticky;
+  background: var(--color-dark-green);
+  color: white;
+  border-radius: 10px;
+  position: absolute;
+  top: 79%;
+}
+
+.header__info-tags{
+  display: flex;
+  align-items: center;
+}
+
+.info-tag{
+  display: flex;
+  align-items: center;
+}
+
+img{
+  width: 40px;
+  height: 40px;
+}
