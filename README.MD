@@ -17,9 +17,19 @@ Todos los recursos utilizados serán mencionados a este readme.
 	Bed: https://www.flaticon.com/free-icon/double-bed_3159436?term=bed&page=1&position=9&page=1&position=9&related_id=3159436&origin=search
 	Shower: https://www.flaticon.com/free-icon/shower_900685?related_id=900685
 	Swimming Pool: https://www.flaticon.com/free-icon/swimming-pool_686943?related_id=686943
+	Left arrow: https://www.flaticon.com/free-icon/left-arrow_860790?related_id=860790
+	Right arrow: https://www.flaticon.com/free-icon/next_860828?related_id=860828
 
 > Se añadirán íconos según sean utilizadas
 
 ## Fuentes tipográficas
+- Lato ( titles ) : https://fonts.google.com/specimen/Lato?query=lato
+- Open Sans ( body ) : https://fonts.google.com/specimen/Open+Sans?query=open+sans
 
 > Se añadirán fuentes según sean utilizadas.
+
+## Parafraseo
+
+Main information : https://fincacanabrava.com/
+
+> Se añadirán frases según sean utilizadas.
