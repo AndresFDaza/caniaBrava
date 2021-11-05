@@ -26,12 +26,17 @@
   --body-font-family : 'Open Sans', sans-serif; /* 400 and 600*/
 }
 
+
 body {
   font-family: var(--body-font-family);
   color: #333;
   font-size: 62.5%;
   line-height: 1.6em;
   margin: 0;
+}
+
+a{
+  text-decoration: none;
 }
 
 /* Header styles */
