@@ -21,5 +21,13 @@ Todos los recursos utilizados serán mencionados a este readme.
 > Se añadirán íconos según sean utilizadas
 
 ## Fuentes tipográficas
+- Lato ( titles ) : https://fonts.google.com/specimen/Lato?query=lato
+- Open Sans ( body ) : https://fonts.google.com/specimen/Open+Sans?query=open+sans
 
 > Se añadirán fuentes según sean utilizadas.
+
+## Parafraseo
+
+Main information : https://fincacanabrava.com/
+
+> Se añadirán frases según sean utilizadas.
