@@ -95,6 +95,7 @@ header {
   border-radius: 10px;
   position: absolute;
   top: 79%;
+  flex-wrap: wrap;
 }
 
 .header__info-tags{
@@ -115,6 +116,10 @@ header {
   margin-right: .6rem;
 }
 
+.header__info-place{
+  padding-left: 1rem;
+}
+
 /* Main styles */
 
 main{
@@ -128,7 +133,7 @@ main{
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 3fr;
   align-items: start;
-  gap: 5rem 12rem ;
+  gap: 1rem 20% ;
   padding: 8% 14%;
 }
 
