@@ -9,10 +9,14 @@ Todos los recursos utilizados serán mencionados a este readme.
 # Recursos utilizados
 	> Se añadirá un preview del resultado final
 ## Imágenes
-
+	Header-banner : https://www.casastropicales.com/wp-content/uploads/2017/04/canabravahome-min.jpg
 > Se añadirán imágenes según sean utilizadas
 
 ## Íconos
+	People: https://www.flaticon.com/premium-icon/people_3239045?related_id=3239045
+	Bed: https://www.flaticon.com/free-icon/double-bed_3159436?term=bed&page=1&position=9&page=1&position=9&related_id=3159436&origin=search
+	Shower: https://www.flaticon.com/free-icon/shower_900685?related_id=900685
+	Swimming Pool: https://www.flaticon.com/free-icon/swimming-pool_686943?related_id=686943
 
 > Se añadirán íconos según sean utilizadas
 
