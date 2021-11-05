@@ -80,7 +80,7 @@ header {
 }
 
 .header__info-container{
-  font-size: .8rem;
+  font-size: 1rem;
   display: flex;
   background: aliceblue;
   justify-content: space-between;
@@ -88,7 +88,6 @@ header {
   width: 90%;
   justify-content: space-between;
   padding: 2rem 5rem;
-  position: sticky;
   background: var(--color-dark-green);
   color: white;
   border-radius: 10px;
@@ -104,9 +103,13 @@ header {
 .info-tag{
   display: flex;
   align-items: center;
+  padding: 0 1rem;
+  border-right: 1px solid white;
 }
 
-img{
+.info-tag > img{
   width: 40px;
   height: 40px;
+  margin-right: .6rem;
 }
+
